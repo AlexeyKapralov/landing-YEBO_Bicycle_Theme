@@ -1,0 +1,223 @@
+body {
+  background-color: #f7f7f7;
+}
+
+p {
+  font-family: "Conv_MYRIADPRO-REGULAR";
+}
+
+.about-us {
+  width: 100%;
+  height: 800px;
+  background: url("../img/Clip.jpg") 50%/cover no-repeat;
+  padding: 35px;
+}
+.about-us__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 0 auto;
+  max-width: 623px;
+  font-family: "Lato";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15.6px;
+  color: #4D4959;
+  letter-spacing: 2px;
+}
+.about-us a {
+  color: #4D4959;
+}
+.about-us a:visited {
+  color: #4D4959;
+}
+.new-generation__container {
+  max-width: 1080px;
+  margin: auto;
+  text-align: center;
+  padding: 117px 40px 130px 40px;
+}
+.new-generation__icon {
+  margin-bottom: 29px;
+}
+.new-generation__title {
+  margin-bottom: 23px;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21.6px;
+  letter-spacing: 2px;
+  color: #353738;
+  text-transform: uppercase;
+}
+.new-generation__text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 34px;
+  color: #848789;
+}
+
+.work__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.work__image-big {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.work__image-pre-small {
+  grid-row: span 3;
+}
+.work .new-generation {
+  grid-row: span 2;
+  background-color: #fff;
+}
+.work .new-generation__container {
+  padding: 60px;
+  max-width: 550px;
+}
+.work .new-generation__text {
+  font-size: 13px;
+}
+
+.twitter__wrapper {
+  background-color: f7f7f7;
+  padding: 50px;
+}
+.twitter__container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1083px;
+}
+.twitter__logo {
+  padding: 0px 0px 30px 0px;
+}
+.twitter__title {
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  color: #353738;
+  padding: 0px 0px 18px 0px;
+  font-size: 15px;
+}
+.twitter__title span {
+  color: #848789;
+}
+.twitter__text {
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  color: #848789;
+  font-size: 21px;
+  line-height: 31px;
+}
+
+.shop__images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop__rowbutton {
+  background-color: #282f35;
+}
+.shop__container {
+  padding: 25px;
+}
+.shop__button {
+  margin: auto;
+  max-width: 300px;
+  border: 1px solid #fff;
+  padding: 20px 25px;
+  color: #fff;
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  font-size: 14px;
+  text-align: center;
+}
+.shop__button a:visited {
+  color: #fff;
+}
+.shop__button a:visited a:visited, .shop__button a:visited a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.shop__images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop__rowbutton {
+  background-color: #282f35;
+}
+.shop__container {
+  padding: 25px;
+}
+.shop__button {
+  margin: auto;
+  max-width: 300px;
+  border: 1px solid #fff;
+  padding: 20px 25px;
+  color: #fff;
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  font-size: 14px;
+  text-align: center;
+}
+.shop__button a:visited, .shop__button a {
+  color: #fff;
+}
+
+.mailing {
+  background-color: #fff;
+}
+.mailing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 0;
+}
+.mailing__logo {
+  margin-bottom: 38px;
+}
+.mailing__stay {
+  margin-bottom: 25px;
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  font-size: 24px;
+  line-height: 34px;
+  color: #848789;
+}
+.mailing__enter-mail {
+  display: flex;
+}
+.mailing__enter-mail form {
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+.mailing__enter-mail form input {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  border: 1px solid #d3d7d9;
+  color: #a6a6a6;
+  padding: 25px;
+  margin-right: 5px;
+}
+.mailing__enter-mail form input::-moz-placeholder {
+  color: #cdcdcd;
+}
+.mailing__enter-mail form input:-ms-input-placeholder {
+  color: #cdcdcd;
+}
+.mailing__enter-mail form input::placeholder {
+  color: #cdcdcd;
+}
+.mailing__enter-mail form button {
+  margin-top: 10px;
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  font-size: 24px;
+  line-height: 24px;
+  padding: 26px 47px;
+  background-color: #64c29e;
+  color: #fff;
+}

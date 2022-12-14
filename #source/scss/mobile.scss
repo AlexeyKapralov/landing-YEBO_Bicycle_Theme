@@ -1,0 +1,282 @@
+body{
+	background-color: #f7f7f7;
+}
+p{
+	font-family: 'Conv_MYRIADPRO-REGULAR';
+}
+.about-us {
+	width: 100%;
+	height: 800px;
+	background: url("../img/Clip.jpg") 50%/cover no-repeat;
+	padding: 35px;
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0px auto 0 auto;
+		max-width: 623px;
+		font-family: "Lato";
+		font-size: 11px;
+		font-weight: 500;
+		line-height: 15.6px;
+		color: #4D4959;
+		letter-spacing: 2px;
+	}
+
+
+	a{
+		color: #4D4959;;
+		&:visited{
+			color: #4D4959;
+		}
+	}
+	@media (max-width:320px){
+		
+	}
+}
+
+.new-generation {
+
+
+	&__container {
+		max-width: 1080px;
+		margin: auto;
+		text-align: center;
+		padding: 117px 40px 130px 40px;
+	}
+
+	&__icon{
+		margin-bottom: 29px;
+	}
+
+	&__title {
+		margin-bottom: 23px;
+		font-family: "Lato";
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 21.6px;
+		letter-spacing: 2px;
+		color: #353738;
+		text-transform: uppercase;
+	}
+
+	&__text {
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 34px;
+	color: #848789;
+	}
+}
+
+.work {
+	// display: grid;
+	// justify-content: center;
+	// grid-template: repeat(9, 200px) / repeat(3, 1fr);
+
+	&__image {
+		// position: relative;
+		// aspect-ratio: 1/1;
+		img{
+		// 	position: absolute;
+			width: 100%;
+			height: 100%;
+		// 	top: 0;
+		// 	left: 0;
+		// 	aspect-ratio: 4/3;
+			object-fit: cover;
+		}
+	}
+
+	&__image-big {
+		grid-column: span 2;
+		grid-row: span 3;
+	}
+
+
+	&__image-pre-small {
+		grid-row: span 3;
+	}
+	.new-generation{
+		grid-row: span 2;
+		background-color: #fff;
+		&__container{
+			padding: 60px;
+			max-width: 550px;
+		}
+		&__text{
+			font-size: 13px;
+		}
+	}
+}
+.twitter {
+
+	&__wrapper {
+		background-color: f7f7f7;
+		padding: 50px	;
+	}
+
+	&__container {
+		margin: 0 auto;
+		text-align: center;
+		max-width: 1083px;
+	}
+
+	&__logo {
+		padding: 0px 0px 30px 0px;
+	}
+
+	&__title {
+		font-family: 'Conv_MYRIADPRO-REGULAR';
+		color: #353738;
+		padding: 0px 0px 18px 0px;
+		font-size: 15px;
+		span{
+			color:#848789;
+			
+		}
+	}
+
+	&__text {
+		font-family: 'Conv_MYRIADPRO-REGULAR';
+		color: #848789;
+		font-size: 21px;
+		line-height: 31px;
+	}
+}
+
+
+.shop {
+	&__gallery {}
+
+	&__images {
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover
+		};
+	}
+
+	&__images-twocolumn {}
+
+	&__images-tworow {}
+
+	&__rowbutton {
+		background-color: #282f35;
+	}
+
+	&__container {
+		padding: 25px;
+	}
+
+	&__button {
+		margin: auto;
+		max-width: 300px;
+		border: 1px solid #fff;
+		padding: 20px 25px;
+		color: #fff;
+		font-family: 'Conv_MYRIADPRO-REGULAR';
+		font-size: 14px;
+		text-align: center;
+		a:visited{
+			color: #fff;
+		a:visited, a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.shop {
+	&__gallery {}
+
+	&__images {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover
+		}
+
+		;
+	}
+
+	&__images-twocolumn {}
+
+	&__images-tworow {}
+
+	&__rowbutton {
+		background-color: #282f35;
+	}
+
+	&__container {
+		padding: 25px;
+	}
+
+	&__button {
+		margin: auto;
+		max-width: 300px;
+		border: 1px solid #fff;
+		padding: 20px 25px;
+		color: #fff;
+		font-family: 'Conv_MYRIADPRO-REGULAR';
+		font-size: 14px;
+		text-align: center;
+
+		a:visited, a {
+			color: #fff;
+		}
+	}
+}
+.mailing {
+	background-color: #fff;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 110px 0;
+	}
+
+	&__logo {
+		margin-bottom: 38px;
+	}
+
+	&__stay {
+		margin-bottom: 25px;
+		font-family: 'Conv_MYRIADPRO-REGULAR';
+		font-size: 24px;
+		line-height: 34px;
+		color: #848789;
+	}
+
+	&__enter-mail {
+		display: flex;
+		form{
+			text-align: center;
+			padding: 0 10px 0 10px;
+			input{
+				font-size: 20px;
+				line-height: 24px;
+				font-family: 'Conv_MYRIADPRO-REGULAR';
+				border: 1px solid #d3d7d9;
+				color: #a6a6a6;
+				&::placeholder{
+					color: #cdcdcd;
+				}
+				padding: 25px;
+				margin-right: 5px;
+			}
+			button{
+				margin-top: 10px;
+				font-family: 'Conv_MYRIADPRO-REGULAR';
+				font-size: 24px;
+				line-height: 24px;
+				padding: 26px 47px;
+				background-color: #64c29e;
+				color:#fff;
+			}
+		}
+	}
+
+}
+

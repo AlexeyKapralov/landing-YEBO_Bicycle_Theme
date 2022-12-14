@@ -1,0 +1,282 @@
+@import "reset.scss";
+@import "fonts.scss";
+@import "colors.scss";
+@import "mobile.scss";
+
+@media (min-width:768px) {
+	.about-us {
+		&__menu {
+			font-size: 15px;
+		}
+	}
+	.new-generation {
+
+		&__title {
+			font-size: 18px;
+		}
+
+		&__text {
+			font-size: 15px;
+		}
+	}
+}
+@media (min-width:900px) {
+	.work {
+		display: grid;
+		// justify-content: center;
+		grid-template: repeat(9, 200px) / repeat(2, 1fr);
+
+		&__image {
+			position: relative;
+			img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+			}
+		}
+
+		&__image-big {
+			grid-column: span 2;
+			grid-row: span 3;
+		}
+
+		&__image-small {
+			aspect-ratio: 2/1;
+		}
+
+		&__image-pre-small {
+			grid-row: span 3;
+		}
+		&__block{
+			grid-row:span 3;
+			
+			display: grid;
+			grid-template-rows: 3 50%;
+
+			.new-generation {
+				grid-row:span 2;
+				background-color: #fff;
+
+				&__container {
+					
+					padding: 60px;
+					max-width: 550px;
+				}
+
+				&__text {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+@media (min-width:1400px) {
+	.work {
+		grid-template: repeat(9, 1fr) / repeat(3, 1fr);
+	
+			&__block {
+				overflow: hidden;
+			}
+	
+			&__image-small {aspect-ratio: 3/1;}
+}
+}
+@media (min-width:1067px) {
+		.twitter{
+			&__logo {
+				padding: 0px 0px 38px 0px;
+			}
+		
+			&__title {
+				padding: 0px 0px 26px 0px;
+				font-size: 18px;
+			}
+		
+			&__text {
+				font-size: 24px;
+				line-height: 34px;
+			}
+		}
+}
+
+
+@media (min-width:425px) {
+	.shop {
+			
+			&__gallery {
+				display: grid;
+				grid-template: 1fr / 1fr 1fr;
+			}
+	
+			&__images {
+				position: relative;
+				aspect-ratio: 1/1;
+				img{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					right: 0;
+					object-fit: cover;
+				}
+			}
+	
+			&__images-twocolumn {
+				grid-column: span 2;
+				aspect-ratio: 2/1;
+			}
+	
+			&__images-tworow {
+				grid-row: span 2;
+				aspect-ratio: 1/2;
+			}
+	
+			&__rowbutton {}
+	
+			&__container {}
+	
+			&__button {}
+		}
+}
+@media (min-width:768px) {
+	.shop {
+		&__gallery {
+			display: grid;
+			grid-template: 1fr / 1fr 1fr 1fr;
+			& div:nth-child(1) {
+				order: 1;
+			}
+		
+			& div:nth-child(2) {
+				order: 2;
+			}
+		
+			& div:nth-child(3) {
+				order: 4;
+			}
+		
+			& div:nth-child(4) {
+				order: 3;
+			}
+			& div:nth-child(5) {
+				order: 5;
+			}
+			& div:nth-child(6) {
+				order: 6;
+			}
+			& div:nth-child(7) {
+				order: 7;
+			}
+			& div:nth-child(8) {
+				order: 8;
+			}
+		}
+}
+}
+@media (min-width:1000px) {
+	.shop {
+		&__gallery {
+				display: grid;
+				grid-template: 1fr 1fr / repeat(4, 1fr);
+
+				& div:nth-child(1) {
+					order: 1;
+				}
+			
+				& div:nth-child(2) {
+					order: 2;
+				}
+			
+				& div:nth-child(3) {
+					order: 4;
+					grid-row-start: 2;
+					grid-column-start: 1;
+					grid-column-end: 3;
+				}
+			
+				& div:nth-child(4) {
+					order: 3;
+				}
+			
+				& div:nth-child(5) {
+					order: 5;
+				}
+			
+				& div:nth-child(6) {
+					order: 6;
+				}
+			
+				& div:nth-child(7) {
+					order: 7;
+				}
+			
+				& div:nth-child(8) {
+					order: 8;
+				}
+		}
+	}
+}
+@media (min-width:1300px) {
+	.shop {
+		&__gallery {
+			display: grid;
+			grid-template: 1fr / repeat(6, 1fr);
+			& div:nth-child(n) {
+					order: 1;
+				}
+		}
+	}
+}
+@media (min-width:768px) {
+	.shop {
+		&__container {
+			padding: 75px;
+		}
+
+		&__button {
+			padding: 20px 65px;
+		}
+	}
+}
+@media (min-width:534px){
+	.mailing {
+		background-color: #fff;
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 110px 0;
+		}
+
+		&__logo {
+			margin-bottom: 38px;
+		}
+
+		&__stay {
+			margin-bottom: 25px;
+			font-family: 'Conv_MYRIADPRO-REGULAR';
+			font-size: 24px;
+			line-height: 34px;
+			color: #848789;
+		}
+
+		&__enter-mail {
+			display: flex;
+
+			form {
+				text-align: center;
+				padding: 0 10px 0 10px;
+
+				input {
+					width: 400px;
+				}
+				
+			}
+		}
+	}
+}
